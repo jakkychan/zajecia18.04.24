@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powiadomienia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Powiadomienia</h1>
+        <div class="buttons-container">
+            <button onclick="showNotification('Pojedyncze')">Dodaj pojedyncze powiadomienie</button>
+            <button onclick="startInterval()">Dodaj cykliczne powiadomienie</button>
+            <button onclick="stopInterval()">Zatrzymaj cykliczne powiadomienie</button>
+        </div>
+        <div class="notification-container">
+            <h2 class="hidden">Pojedyncze Powiadomienia</h2>
+            <ul id="singleNotifications"></ul>
+            <h2 class="hidden">Cykliczne Powiadomienia</h2>
+            <ul id="intervalNotifications"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

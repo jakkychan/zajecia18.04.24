@@ -1,0 +1,73 @@
+body {
+    background-color: lightgrey;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: babyblue;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buttons-container button {
+    margin: 5px;
+}
+
+.notification-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.notification-container h2.hidden {
+    display: none;
+}
+
+.notification-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notification-container li {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notification-container .single-notification {
+    background-color: green;
+}
+
+.notification-container .interval-notification {
+    background-color: blue;
+}
+
+.notification-container .single-notification::before,
+.notification-container .interval-notification::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.notification-container .single-notification::before {
+    background-color: green;
+}
+
+.notification-container .interval-notification::before {
+    background-color: blue;
+}
